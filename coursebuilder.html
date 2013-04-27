@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1>A brief course in Whatever</h1>
+    
+    <div id = "link-submit">
+    Title:
+    <input type="text" ng-model="item.data.message"> <br>
+    Video link:
+    <input type="text" ng-model="item.data.message">
+    
+    
+
+      <input ng-click="add()" type="submit" name="add new item" value="Submit">
+
+    </div>
+    
+      <ul>
+        
+      <li ng-repeat="entity in items.entities">
+          Title: <a href="http://www.youtube.com/watch?v=pWcZbGBN0q8">Introduction to Databases: Screenside Chat #1</a><br>
+          Quality: 0<br>
+          Difficulty: All the difficulty!<br>
+          Tags: OHGODMAKEITSTOP, CompSci, Databases, 
+          <pre><iframe width="640" height="360" src="http://www.youtube.com/embed/pWcZbGBN0q8?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></pre>
+      </li>
+      
+      <li ng-repeat="entity in items.entities">
+          Title: <a href="http://www.youtube.com/watch?v=ClPShKs9Kr0">Cosmos: A Personal Voyage - Episode 1</a><br>
+          Quality: 11<br>
+          Difficulty: 2<br>
+          Tags: Sagan, GeneralScience
+          <pre><iframe width="640" height="360" src="http://www.youtube.com/embed/ClPShKs9Kr0?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></pre>
+      </li>
+    
+
+      
+      <li ng-repeat="entity in items.entities">
+          Title: <a href="http://www.youtube.com/watch?v=Ki_Af_o9Q9s">Seven Minutes of Terror</a><br>
+          Quality: 9<br>
+          Difficulty: 3<br>
+          Tags: Astronomy, Curiosity, Mars, WoahDude
+          <pre><iframe width="640" height="360" src="http://www.youtube.com/embed/Ki_Af_o9Q9s?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></pre>
+      </li>
+    </ul>
+  </body>
+
+</html>
